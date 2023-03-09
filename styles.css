@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.image {
+    width: 100%;
+    object-fit: contain;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#tooltip1,
+#tooltip2 {
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
